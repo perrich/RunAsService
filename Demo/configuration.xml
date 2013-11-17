@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <name value="WordPad2" />
+  <executable value="%ProgramFiles%\Windows NT\Accessories\wordpad.exe" />
+  <parameters value="" />
+  <displayName value="WordPad2 (RunAsService)" />
+  <description value="WordPad sample for RunAsService..." />
+  <exitHooks value="RestartHook" />
+  <email>
+    <address>
+      <to value="" />
+      <from value="" />
+    </address>
+    <smtp>
+      <host value="" />
+      <port value="" />
+      <login value="" />
+      <password value="" />
+    </smtp>
+    <subject value="Warning: {0} [Service] - Process has exited !"/>
+  </email>
+</configuration>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <name value="MyApplication" />
+  <executable value="C:\Path-To\application-n.exe" />
+  <parameters value="Parameters for application n" />
+  <displayName value="My Application" />
+  <description value="My Application description" />
+  <killProcessTree value="false" />
+  
+  <!-- List of hooks executed when an unexpected exit is detected (available values are EmailSenderHook, StopHook or RestartHook) -->
+  <exitHooks value="EmailSenderHook,StopHook" />
+  
+  <!-- Begin StopHook configuration -->
+  <email>
+    <address>
+      <to value="recipient@domain.com" />
+      <from value="from@me.in" />
+    </address>
+    <smtp>
+      <host value="localhost" />
+      <port value="" />
+      <login value="" />
+      <password value="" />
+    </smtp>
+    <subject value="Warning: {0} [Service] - Process has exited !"/>
+  </email>
+  <!-- End StopHook configuration -->
+  
+  <!-- Begin RestartHook configuration -->
+  <restart>
+    <times value="3" />
+  </restart>
+  <!-- End RestartHook configuration -->
+</configuration>

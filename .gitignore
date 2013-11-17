@@ -1,0 +1,15 @@
+/.hgignore
+
+/*.suo
+
+/*.user
+
+/.hg/*
+
+*/obj/*
+
+*/bin/*
+
+.sonar
+*.user
+/Setup/*.exe
